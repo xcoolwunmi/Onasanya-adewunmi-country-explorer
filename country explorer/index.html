@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Explore your favorite countries</h1>
+  <p>where do you want to Explore </p>
+
+  <!-- Controls -->
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search countries by name">
+    
+    <select id="regionFilter">
+      <option value="">Filter by Region</option>
+      <option value="Africa">Africa</option>
+      <option value="Americas">Americas</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+
+    <button id="toggleDark"> Dark Mode</button>
+  </div>
+
+  <!-- Countries List -->
+  <section id="countries">
+    <h2>Countries</h2>
+    <div id="countries-list" class="countries-list"></div>
+  </section>
+
+  <!-- Country Details -->
+  <section id="country-details">
+    <h2>Country Details</h2>
+    <div id="details-content">
+      <p>Click a country to view details here...</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
